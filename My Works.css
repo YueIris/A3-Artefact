@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.all{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*fixed navigation
+----------------------------------*/
+.nav{
+    height: 110px;
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 12;
+  }
+  .logo{
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+    width: 225px;
+    position:absolute;
+  }
+  .nav-nav{
+    height: 100px;
+    width: 470px;
+    margin-left: 900px;
+  }
+  .nav ul{
+    list-style-type: none;
+  
+  }
+  .nav li{
+    float: left;
+  }
+  .nav li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding:40px 30px;
+    font-size: 18px;
+  }
+.nav li a:hover{
+    color: #5EA669;
+}
+
+/*important*/
+.spacer
+{
+    width: 100%;
+    height: 70px;
+}
+
+/*banner*/
+.banner-area{
+   width:100%;
+   height:360px;
+   background-image:url(1.jpg);
+   -webkit-background-size: cover;
+   background-size:cover;
+   background-position: center;
+}
+.banner-area h2{
+   padding-top: 145px;
+   font-size:50px;
+   color:#fff;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+}
+  
+/* Timeline
+----------------------------------*/
+.timeline {
+    position: relative;
+    background-color: rgb(172, 192, 178);
+    margin: 0;
+    max-width: 1400px;
+  }
+  
+  .timeline::after {
+    position: absolute;
+    content: ''; 
+    width: 10px;
+    top: 40px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+    background-color: rgb(235, 236, 235);
+  }
+  
+  .box {
+    position: relative;
+    width: 50%;
+    padding: 20px 80px;
+    padding-bottom: 120px;
+    background-color:  rgb(172, 192, 178);
+  }
+
+  .right {
+    left: 50%;
+  }
+
+   .left {
+    left: 0;
+  }
+
+  .box::after {
+    position: absolute;
+    top: 120px;
+    right: -16px;
+    content: '';
+    height: 20px;
+    width: 20px; 
+    border: 5px solid #3f4640;  
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+  }
+
+ .right::after {
+  left: -16px;
+  }
+  
+  .left::before {
+    position: absolute;
+    top: 120px;
+    right: 70px;
+    content: " ";
+    height: 0;
+    width: 0;  
+    border: 10px solid white;
+    border-color: transparent transparent transparent white;
+    border-width: 15px 0 15px 15px;
+    z-index: 1;
+  }
+
+  .right::before {
+    position: absolute;
+    content: " ";top: 120px;
+    left: 70px;
+    height: 0;
+    width: 0;  
+    border: 10px solid white;
+    border-color: transparent white transparent transparent;
+    border-width: 15px 15px 15px 0;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    top:70px;
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border-radius: 6px; 
+    padding: 10px 20px;
+  }
+  
+  img{
+    width:100%;
+    padding-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Full-width containers */
+    .box {
+      padding-left:80px;
+      width: 100%;
+      }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 40px;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 27px;
+      }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .box::before {
+    border: 10px solid white;
+    border-color: transparent white transparent transparent;
+    border-width: 15px 15px 15px 0;
+    left: 70px;
+    }
+  
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+/*footer
+-------------------------------*/
+
+footer {
+    background-color:rgb(58, 58, 58);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    padding:5px;
+  }
+  
+  footer p {
+    margin-bottom: 10px; 
+    color: white;
+    letter-spacing: 1.5px;
+  }
+  
+  .foot-up {
+    padding-top: 25px;
+  }
+  
+  .footer-below a {
+    text-decoration: none;
+    margin: 12px;
+    color: #8ece70;
+    font-size: 15px;
+  }
+  
+  .footer-below a:hover {
+    transition: color .10s ease;
+    color: #dce472;  
+  }
