@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PaperDay</title>
+    <link rel="stylesheet" href="css/origami.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div class="all">
+    <div class="nav">
+        <img src="images/logo.png" class="logo">
+        <div class="nav-nav">
+            <ul>
+                <li><a href="file:///C:/Users/Yue%20Zhou/Desktop/PaperDay/origami.html">Home</a></li>
+                <li><a href="file:///C:/Users/Yue%20Zhou/Desktop/Instructions/index.html">Instructions</a></li>
+                <li><a href="file:///C:/Users/Yue%20Zhou/Desktop/My%20works/index.html">My works</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <img src="images/owl2.png">
+        <div class="head-right">
+            <p class="p1">2020-10-1</p>
+            <p class="p2">Origami Owl</p>
+            <p class="p3">Owls are nocturnal animals. They<br>sleep during the day and hunt at<br>night. Owls are also seen as a symbol<br>of wisdom in Greek mythology. Follow<br> the following steps and make your own paper owl!</p>
+            <a class="button" href="#step1">Let's Start</a>
+        </div>
+    </div>
+    <div class="step1"  id="step1">
+        <p class="step1-p1">Step1</p>
+        <p class="step1-p2">Use one piece of paper <strong><span style="color: #5EA669">18x18 cm</span></strong> in size. Either <br>multi-colored paper or decorative paper can help<br> you with a good design!</p>
+    </div>
+    <div class="step2">
+        <div class="step2-left">
+            <iframe src="https://www.youtube.com/embed/648edMxpPDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="step2-right">
+            <p class="step2-p1">Step2</p>
+            <p class="step2-p2">Watch this video tutorial<br>closely. You will find out how <br>to fold a paper owl.</p>
+        </div>
+    </div>
+    <div class="step3" style="background-image: url('images/Ellipse 1 (1).png');">
+        <div class="step3-top">
+            <p class="step3-p1">Step 3</p>
+            <p class="step3-p2">Look at this  detailed diagram. It teaches you step to step how <br> to make a paper owl.</p>
+        </div>
+        <div>
+            <div id="con">
+                <div id="list" style="left: 0;" >
+                    <img src="images/step1.png" alt="1"/>
+                    <img src="images/step2 .png" alt="2"/>
+                    <img src="images/step3.png" alt="3"/>
+                    <img src="images/step4.png" alt="4"/>
+                </div>
+                <div id="buttons">
+                    <span index="1" class="on"></span>
+                    <span index="2"></span>
+                    <span index="3"></span>
+                    <span index="4"></span>
+                </div>
+                <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+                <a href="javascript:;" id="next" class="arrow">&gt;</a>
+            </div>
+        </div>
+    </div>
+    <div class="step4">
+        <div class="step4-left">
+            <p class="step4-p1">Step4</p>
+            <p class="step4-p2">Finished folding? Take a <br>photo and upload your<br>image right away.</p>
+        </div>
+        <div class="step4-right">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="image">
+                        <img src="" alt="" id="file-img">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file selected, yet!</div>
+                    </div>
+                    <div id="cancel-btn"><i class="fas fa-times"></i></div>
+                    <div class="file-name">File name here</div>
+                </div>
+                <input id="default-btn" type="file" hidden>
+                <button id="custom-btn" onclick="defaultBtnActive()" >Upload your image +</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom">
+        <p class="bottom-p1">Congratulations!</p><br>
+        <p class="bottom-p2">You have successfully uploaded today's<br>origami. Click below to check out more<br> origami instructions!</p>
+        <a href="file:///C:/Users/Yue%20Zhou/Desktop/Instructions/index.html" class="w3-button w3-black w3-hover-green">More Instructions</a>
+        <img src="images/leaf%20(1).png" class="leaf">
+    </div>
+</div>
+
+
+<!-- footer -->
+<footer>
+    <div class="foot-up">
+      <p>PaperDay.com &copy; 2020</p>
+      
+      <nav class="footer-below">
+        <a href="#">Back to Top</a>
+      </nav>
+    </div>
+</footer>
+
+
+<script src="js/lun.js"></script>
+</body>
+</html>
