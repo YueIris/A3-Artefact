@@ -96,7 +96,7 @@ window.onload = function () {
         Public=Public+1;
         buttonsShow(Public);
     };
-
+    
     for (var i = 0; i < buttons.length; i++) {
         (function (i) {
             buttons[i].onclick = function () {
